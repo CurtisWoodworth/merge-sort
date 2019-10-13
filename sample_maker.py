@@ -10,6 +10,7 @@ class SampleMaker:
         self.list_x = []
 
     def make_sample_10(self):
+        """Creates and returns a list of 10 random 10-bit integers"""
         i = 0
         while i < 10:
             self.list_10.append(getrandbits(10))
