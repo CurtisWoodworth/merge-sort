@@ -6,10 +6,10 @@ def quick_sort(A, p, r):
 
 
 def partition(A, p, r):
-    x = A[r]
+    pivot = A[r]
     i = p - 1
-    for j in range(p, r-1):
-        if A[j] <= x:
+    for j in range(p, r):
+        if A[j] <= pivot:
             i += 1
             A[i], A[j] = A[j], A[i]
     A[i + 1], A[r] = A[r], A[i + 1]
